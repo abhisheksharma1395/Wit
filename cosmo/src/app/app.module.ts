@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { HomeComponent } from './home/home.component';
+import { ShoppingBagComponent } from './shopping-bag/shopping-bag.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CheckoutComponent,
     WalletComponent,
-    HomeComponent
+    HomeComponent,
+    ShoppingBagComponent
   ],
   imports: [
     BrowserModule,
