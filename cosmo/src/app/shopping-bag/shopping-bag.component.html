@@ -1,18 +1,76 @@
-
-    <div class="">
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+<div class="bg">
+    <nav class="navbar nav-bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
                 <div class="row">
-                    <div class="col-6">
-                        <img src="../../assets/images/letf-arrow.JPG" alt="" width="30" height="24" class="d-inline-block align-text-top left-arrow">
+                    <div class="col-6 padding-0">
+                        <img src="../../assets/images/left-arrow.JPG" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top left-arrow">
                     </div>
-                    <div class="col-6">
-                        <section class="shopping-bag">Shopping Bag(2)</section> 
+                    <div class="col-6 padding-0">
+                        <section class="shopping-bag">Shopping Bag(2)</section>
                     </div>
                 </div>
-              </a>
+            </a>
+        </div>
+    </nav>
+    <section class="padding-x">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text"><input type="checkbox" name="reward" id="reward-radio" (change)="onChange($event)"> {{rewardPoints}} Reward
+                    Points &#8377;({{rewardPoints/100}}).</p>
             </div>
-          </nav>
-    </div>
-
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text"><input type="checkbox" name="reward" id="reward-radio" (change)="onChangeSustainable($event)"> Sustainable Packaging
+                    <label><small>By choosinhg this option you will receive<strong> 100 Reward
+                                Points</strong></small></label>
+                </p>
+            </div>
+        </div>
+        <div>
+            <img src="../../assets/images/products.JPG" alt="" class="p-img">
+        </div>
+        <div class="card">
+            <div class="card-header text-center">
+                Payment Details
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    <table>
+                        <tr>
+                            <td><label >Bag Total</label></td>
+                            <td><label class="right-align">&#8377;{{bagTotal}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label >Sub Total</label></td>
+                            <td><label class="right-align">&#8377;{{bagTotal}}</label></td>
+                        </tr>
+                        <tr *ngIf="reward" class="discount">
+                            <td><label >Discount(646 points used)</label></td>
+                            <td><label class="right-align">-&#8377;{{rewardPoints/100}}</label></td>
+                        </tr>
+                        <tr>
+                            <td><label >Shipping Charge</label></td>
+                            <td><label class="right-align">Free</label></td>
+                        </tr>
+                        <tr>
+                            <td><label >Grand Total</label></td>
+                            <td><label class="right-align">&#8377;{{grandTotal}}</label></td>
+                        </tr>
+                    </table>
+                    <input class="small" type="text" name="coupon" id="coupon" placeholder="Have a coupon?">
+                    <hr>
+            </div>
+        </div>
+        <div class="bg-white">
+            <table>
+                <tr>
+                    <td class="btn-td"><label class="margin-left"><strong>Grand Total:</strong></label><br><label class="total margin-left">&#8377;{{grandTotal}}</label></td>
+                    <td class="btn-td"><button class="btn" (click)="proceed()">Proceed > </button></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</div>

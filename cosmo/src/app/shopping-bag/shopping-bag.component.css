@@ -1,11 +1,103 @@
 .shopping-bag{
     font-size: x-small;
     font-weight: bold;
+    margin-left: 45px;
 }
 
 .left-arrow{
     height: 16px;
     width: 20px;
-    margin-left: -25px;
+}
 
+.bg{
+    background-color: whitesmoke;
+    height: 670px;
+}
+
+.nav-bg{
+    background-color: white;
+}
+
+.padding-0 {
+    padding: 0 0;
+}
+
+.card {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+}
+
+.padding-x {
+    padding: 0 1rem;
+}
+
+.p-img{
+    width: 290px;
+    height: 200px;
+}
+
+small {
+    font-size: xx-small;
+}
+
+.navbar-brand {
+    padding: 0 0;
+    color: black;
+}
+
+.navbar {
+    padding: 10px 0 0 0;
+}
+.card-text {
+    font-size: small;
+}
+
+.right-align{
+    text-align: right;
+}
+
+table,tr,td {
+    width: 100%;
+    border: none;
+    font-size: xx-small;
+}
+
+.small {
+    font-size:  x-small;
+}
+
+.discount {
+    color: rgb(9, 224, 224);
+}
+
+.btn {
+    width: 100%;
+    background-color: #ec2e7a;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-td {
+    width: 50%;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.total{
+    color: #ec2e7a
+}
+
+.margin-left {
+    margin-left: 1rem;
+}
+
+.text-center{
+    text-align: center;
+    font-weight: bold;
 }
