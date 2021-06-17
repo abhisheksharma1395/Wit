@@ -1,13 +1,111 @@
 <div>
-    <div class="row bar">
+    <div class="row bar" *ngIf="!orderSuccess">
         <div class="col-4"><img src="../../assets/images/cosmo.jpg" alt="Cosmo" class="cosmo"></div>
         <div class="col-1 border-right"></div>
-        <div class="col-1 border-right left-align">1-Login <br> <label class="address">nidhi@gmail.com</label></div>
-        <div class="col-1 border-right left-align">2-Address<br><label class="address">House 2040 High Stree Banglore</label></div>
-        <div class="col-1 border-right left-align active-tab">3-Payment</div>
+        <div class="col-1 border-right left-align">1-Login <br> <label class="address">jasmine.kaur@gmail.com</label>
+        </div>
+        <div class="col-1 border-right left-align active-tab" [ngClass]="{'active-tab':!showPayment}">2-Address<br><label class="address">House 2040 High Stree
+                Banglore</label></div>
+        <div class="col-1 border-right left-align" [ngClass]="{'active-tab':showPayment}">3-Payment</div>
         <div class="col-4"></div>
     </div>
-    <div class="bg">
+
+    <div *ngIf="!showPayment" class="bg" id="address">
+        <div class="row payment-section">
+            <div class="col-3"></div>
+            <div class="col-6"><label class="payment-label"></label></div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-2 payment-mode">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="active-address">Saved Addresses</div>
+                        <div>New Address</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 address-option">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text card-text-sustainable"><input type="checkbox" name="reward"
+                                id="reward-radio" checked> Sustainable Packaging
+                            <label><small>By choosing this option you will receive<strong> 100 Reward
+                                        Points</strong></small></label>
+                        </p>
+                    </div>
+                </div>
+                <div class="card address-card">
+                    <div class="card-body edit-address">
+                        <p class="card-text">
+                            <label class="addr"><strong>Jasmin Kaur</strong></label><br>
+                            <label class="addr">House 2040, High Street, Cape Town, Banglore, Karnataka -
+                                123456</label><br>
+                            <label class="addr"><strong>+91-9876987698</strong></label>
+                        </p>
+                        <div>
+                            <button class="btn-edit"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                              </svg>Edit</button><button class="btn-ship" (click)="ship()">SHIP TO THIS ADDRESS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 address-summary">
+                <div class="card">
+                    <div class="card-body bag-edit">
+                        <p class="card-text">
+                        <div class="summary-order">
+                            2 Items in your Bag <label class="float-right arrow-up"></label><label
+                                class="float-right">Edit</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../assets/images/products.JPG" alt="" class="p-img">
+                </div>
+                <div class="card margin-top">
+                    <div class="card-body addr-total">
+                        <p class="card-text">
+                        <div>
+                            <table>
+                                <tr>
+                                    <td><label>Sub Total</label></td>
+                                    <td><label class="right-align">&#8377;{{bagTotal}}</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Shipping Charge</label></td>
+                                    <td><label class="right-align discount">Free</label></td>
+                                </tr>
+                                <tr class="discount">
+                                    <td><label>Discount({{rewardPoints}} points used)</label></td>
+                                    <td><label class="right-align">-&#8377;{{rewardPoints/100}}</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Remove Reward Points</label></td>
+                                    <td><label class="right-align"><button class="btn-rm">REMOVE</button></label></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <table>
+                                <tr class="grand-total">
+                                    <td><label>Grand Total</label></td>
+                                    <td><span class="right-align arrow-up"></span><label
+                                            class="right-align">&#8377;{{grandTotal}}</label></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+    </div>
+
+    <div *ngIf="showPayment && !orderSuccess" class="bg" id="payment">
         <div class="row payment-section">
             <div class="col-3"></div>
             <div class="col-6"><label class="payment-label">CHOOSE PAYMENT METHOD</label></div>
@@ -33,42 +131,48 @@
                     <div class="card-body">
                         <div><strong>Credit/Debit Card</strong></div>
                         <div>1234 5678 1234 5678</div>
-                        <div><label class="expiry">Expiry</label><label class="expiry cvv">cvv<img class="cvv cvv-img" src="../../assets/images/cvv.png" alt="cvv"></label><br>01 /22 <label class="cvv">123</label></div>
-                        <input type=checkbox name="save"><label class="save-checkbox-label">Save this card for future</label>
-                        <div><button class="pay-btn">Pay Now ></button></div>
+                        <div><label class="expiry">Expiry</label><label class="expiry cvv">cvv<img class="cvv cvv-img"
+                                    src="../../assets/images/cvv.png" alt="cvv"></label><br>01 /22 <label
+                                class="cvv">123</label></div>
+                        <input type=checkbox name="save"><label class="save-checkbox-label">Save this card for
+                            future</label>
+                        <div><button class="pay-btn" (click)="pay()">Pay &#8377;{{grandTotal}} Now ></button></div>
                     </div>
                 </div>
             </div>
             <div class="col-2 summary">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-text card-text-sustainable"><input type="checkbox" name="reward" id="reward-radio" checked> Sustainable Packaging
+                        <p class="card-text card-text-sustainable"><input type="checkbox" name="reward"
+                                id="reward-radio" checked> Sustainable Packaging
                             <label><small>By choosing this option you will receive<strong> 100 Reward
                                         Points</strong></small></label>
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card margin-top">
                     <div class="card-body">
                         <p class="card-text">
-                            <div>
-                                2 Items in your Bag <label>Details</label>
-                            </div>
+                        <div class="summary-order">
+                            2 Items in your Bag <label class="float-right arrow"></label><label
+                                class="float-right">Details</label>
+                        </div>
+                        <div>
                             <table>
                                 <tr>
-                                    <td><label >Sub Total</label></td>
+                                    <td><label>Sub Total</label></td>
                                     <td><label class="right-align">&#8377;{{bagTotal}}</label></td>
                                 </tr>
-                                <tr class="discount" >
-                                    <td><label >Discount(646 points used)</label></td>
+                                <tr class="discount">
+                                    <td><label>Discount({{rewardPoints}} points used)</label></td>
                                     <td><label class="right-align">-&#8377;{{rewardPoints/100}}</label></td>
                                 </tr>
                                 <tr>
-                                    <td><label >Shipping Charge</label></td>
+                                    <td><label>Shipping Charge</label></td>
                                     <td><label class="right-align">Free</label></td>
                                 </tr>
                                 <tr>
-                                    <td><label >Grand Total</label></td>
+                                    <td><label>Grand Total</label></td>
                                     <td><label class="right-align">&#8377;{{grandTotal}}</label></td>
                                 </tr>
                                 <tr>
@@ -76,11 +180,39 @@
                                     <td><label class="right-align"><button class="btn-rm">REMOVE</button></label></td>
                                 </tr>
                             </table>
-                            <hr>
+                        </div>
+                        <div>
+                            <table>
+                                <tr class="grand-total">
+                                    <td><label>Grand Total</label></td>
+                                    <td><span class="right-align arrow-up"></span><label
+                                            class="right-align">&#8377;{{grandTotal}}</label></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card sum-address margin-top">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <label class="shipping-addr">SHIPPING ADDRESS</label>
+                            <label class="change-addr">Change</label>
+                            <br>
+                            <label class="addr">Jasmin Kaur</label><br>
+                            <label class="addr">House 2040, High Street, Cape Town, Banglore, Karnataka -
+                                123456</label><br>
+                            <label class="addr"><strong>+91-9876987698</strong></label>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-3"></div>
         </div>
+    </div>
+
+    <div *ngIf="orderSuccess">
+        <button (click)="orderPlaced()">
+            <img src="../../assets/images/success.jpeg" alt="Order Success" class="order-success">
+        </button>
     </div>
 </div>

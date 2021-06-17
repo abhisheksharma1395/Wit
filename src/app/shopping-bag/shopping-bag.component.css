@@ -58,6 +58,7 @@ small {
 
 .right-align{
     text-align: right;
+    float: right;
 }
 
 table,tr,td {

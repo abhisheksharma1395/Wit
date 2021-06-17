@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class ShoppingBagComponent implements OnInit {
 
-  public rewardPoints: number = 646;
+  public rewardPoints: number = 2000;
   public reward:boolean = false;
   public bagTotal: number = 6150;
   public grandTotal: number = this.bagTotal;
