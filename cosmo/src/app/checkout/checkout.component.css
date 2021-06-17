@@ -1,0 +1,111 @@
+.cosmo {
+    float: right;
+    width: 100px;
+    height: 30px;
+}
+
+.bar {
+    padding: 0.5rem 0.5rem;
+    line-height: 1;
+}
+
+.bg{
+    background-color: lightgrey;
+    width: 100%;
+    height: 700px;
+}
+
+.border-right{
+    border-right: 1px solid lightgrey  ;
+    font-weight:600;
+    overflow-x: hidden;
+}
+
+.active-tab{
+    border-bottom: 2px solid #ec2e7a;
+    color: #ec2e7a;
+}
+
+.left-align {
+    text-align: left;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    overflow:hidden
+}
+
+.address {
+    font-weight: 300;
+    font-size: xx-small;
+    overflow:hidden;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100px;
+}
+
+.payment-section{
+    padding-top: 1rem;
+}
+
+.payment-label{
+    font-size: x-small;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+.payment-mode {
+    width: 15%;
+    padding-right: 0;
+}
+
+.card-body > div{
+    font-size: x-small;
+    border-bottom: 1px solid whitesmoke;
+    padding: 0.25rem 0 0.25rem 0;
+}
+
+.active-payment {
+    border-right: 2px solid #ec2e7a;
+}
+
+.expiry{
+    color: grey;
+}
+
+.credit-card{
+    width: 20%;
+    /* padding: 0 0; */
+}
+
+.save-checkbox-label{
+    font-size: x-small;
+    padding-left: 0.5rem;
+}
+
+.pay-btn{
+    width: 100%;
+    background-color: #ec2e7a;
+    color: white;
+    padding: 0.25rem 0 0.25em 0;
+    border-style: none;
+}
+
+.cvv{
+    float:right;
+}
+
+.cvv-img{
+    float: right;
+    width: 25px;
+    height: 25px;
+}
+
+.card-text-sustainable {
+ font-size: xx-small;
+}
+
+.summary{
+    width: 22%;
+}
+
+
