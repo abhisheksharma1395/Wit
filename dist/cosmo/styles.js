@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\WIT\Wit\cosmo\src\styles.css */"OmL/");
+module.exports = __webpack_require__(/*! C:\WIT\Wit\src\styles.css */"OmL/");
 
 
 /***/ }),

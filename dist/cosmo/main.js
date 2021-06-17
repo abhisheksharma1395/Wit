@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\WIT\Wit\cosmo\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! C:\WIT\Wit\src\main.ts */"zUnb");
 
 
 /***/ }),
@@ -109,12 +109,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class CheckoutComponent {
-    constructor() { }
+    constructor() {
+        this.rewardPoints = 646;
+        this.reward = false;
+        this.bagTotal = 6150;
+        this.grandTotal = this.bagTotal - Math.floor(this.rewardPoints / 100);
+    }
     ngOnInit() {
     }
 }
 CheckoutComponent.ɵfac = function CheckoutComponent_Factory(t) { return new (t || CheckoutComponent)(); };
-CheckoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CheckoutComponent, selectors: [["app-checkout"]], decls: 80, vars: 0, consts: [[1, "row", "bar"], [1, "col-4"], ["src", "../../assets/images/cosmo.jpg", "alt", "Cosmo", 1, "cosmo"], [1, "col-1", "border-right"], [1, "col-1", "border-right", "left-align"], [1, "address"], [1, "col-1", "border-right", "left-align", "active-tab"], [1, "bg"], [1, "row", "payment-section"], [1, "col-3"], [1, "col-6"], [1, "payment-label"], [1, "row"], [1, "col-2", "payment-mode"], [1, "card"], [1, "card-body"], [1, "active-payment"], [1, "col-2", "credit-card"], [1, "expiry"], [1, "expiry", "cvv"], ["src", "../../assets/images/cvv.png", "alt", "cvv", 1, "cvv", "cvv-img"], [1, "cvv"], ["type", "checkbox", "name", "save"], [1, "save-checkbox-label"], [1, "pay-btn"], [1, "col-2", "summary"], [1, "card-text", "card-text-sustainable"], ["type", "checkbox", "name", "reward", "id", "reward-radio", "checked", ""]], template: function CheckoutComponent_Template(rf, ctx) { if (rf & 1) {
+CheckoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CheckoutComponent, selectors: [["app-checkout"]], decls: 125, vars: 3, consts: [[1, "row", "bar"], [1, "col-4"], ["src", "../../assets/images/cosmo.jpg", "alt", "Cosmo", 1, "cosmo"], [1, "col-1", "border-right"], [1, "col-1", "border-right", "left-align"], [1, "address"], [1, "col-1", "border-right", "left-align", "active-tab"], [1, "bg"], [1, "row", "payment-section"], [1, "col-3"], [1, "col-6"], [1, "payment-label"], [1, "row"], [1, "col-2", "payment-mode"], [1, "card"], [1, "card-body"], [1, "active-payment"], [1, "col-2", "credit-card"], [1, "expiry"], [1, "expiry", "cvv"], ["src", "../../assets/images/cvv.png", "alt", "cvv", 1, "cvv", "cvv-img"], [1, "cvv"], ["type", "checkbox", "name", "save"], [1, "save-checkbox-label"], [1, "pay-btn"], [1, "col-2", "summary"], [1, "card-text", "card-text-sustainable"], ["type", "checkbox", "name", "reward", "id", "reward-radio", "checked", ""], [1, "card-text"], [1, "right-align"], [1, "discount"], [1, "btn-rm"]], template: function CheckoutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
@@ -224,7 +229,7 @@ CheckoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, " Sustainable Packaging ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "label");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "small");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "By choosinhg this option you will receive");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "By choosing this option you will receive");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "strong");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, " 100 Reward Points");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -233,12 +238,95 @@ CheckoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "div", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "div", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](81, "p", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](83, " 2 Items in your Bag ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](85, "Details");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](79, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "table");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, "Sub Total");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "label", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, styles: [".cosmo[_ngcontent-%COMP%] {\r\n    float: right;\r\n    width: 100px;\r\n    height: 30px;\r\n}\r\n\r\n.bar[_ngcontent-%COMP%] {\r\n    padding: 0.5rem 0.5rem;\r\n    line-height: 1;\r\n}\r\n\r\n.bg[_ngcontent-%COMP%]{\r\n    background-color: lightgrey;\r\n    width: 100%;\r\n    height: 700px;\r\n}\r\n\r\n.border-right[_ngcontent-%COMP%]{\r\n    border-right: 1px solid lightgrey  ;\r\n    font-weight:600;\r\n    overflow-x: hidden;\r\n}\r\n\r\n.active-tab[_ngcontent-%COMP%]{\r\n    border-bottom: 2px solid #ec2e7a;\r\n    color: #ec2e7a;\r\n}\r\n\r\n.left-align[_ngcontent-%COMP%] {\r\n    text-align: left;\r\n    padding-left: 0.25rem;\r\n    padding-right: 0.25rem;\r\n    overflow:hidden\r\n}\r\n\r\n.address[_ngcontent-%COMP%] {\r\n    font-weight: 300;\r\n    font-size: xx-small;\r\n    overflow:hidden;\r\n    display: inline-block;\r\n    white-space: nowrap;\r\n    text-overflow: ellipsis;\r\n    width: 100px;\r\n}\r\n\r\n.payment-section[_ngcontent-%COMP%]{\r\n    padding-top: 1rem;\r\n}\r\n\r\n.payment-label[_ngcontent-%COMP%]{\r\n    font-size: x-small;\r\n    font-weight: 700;\r\n    padding-left: 1rem;\r\n}\r\n\r\n.payment-mode[_ngcontent-%COMP%] {\r\n    width: 15%;\r\n    padding-right: 0;\r\n}\r\n\r\n.card-body[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]{\r\n    font-size: x-small;\r\n    border-bottom: 1px solid whitesmoke;\r\n    padding: 0.25rem 0 0.25rem 0;\r\n}\r\n\r\n.active-payment[_ngcontent-%COMP%] {\r\n    border-right: 2px solid #ec2e7a;\r\n}\r\n\r\n.expiry[_ngcontent-%COMP%]{\r\n    color: grey;\r\n}\r\n\r\n.credit-card[_ngcontent-%COMP%]{\r\n    width: 20%;\r\n    \r\n}\r\n\r\n.save-checkbox-label[_ngcontent-%COMP%]{\r\n    font-size: x-small;\r\n    padding-left: 0.5rem;\r\n}\r\n\r\n.pay-btn[_ngcontent-%COMP%]{\r\n    width: 100%;\r\n    background-color: #ec2e7a;\r\n    color: white;\r\n    padding: 0.25rem 0 0.25em 0;\r\n    border-style: none;\r\n}\r\n\r\n.cvv[_ngcontent-%COMP%]{\r\n    float:right;\r\n}\r\n\r\n.cvv-img[_ngcontent-%COMP%]{\r\n    float: right;\r\n    width: 25px;\r\n    height: 25px;\r\n}\r\n\r\n.card-text-sustainable[_ngcontent-%COMP%] {\r\n font-size: xx-small;\r\n}\r\n\r\n.summary[_ngcontent-%COMP%]{\r\n    width: 22%;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2hlY2tvdXQvY2hlY2tvdXQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFlBQVk7SUFDWixZQUFZO0lBQ1osWUFBWTtBQUNoQjs7QUFFQTtJQUNJLHNCQUFzQjtJQUN0QixjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksMkJBQTJCO0lBQzNCLFdBQVc7SUFDWCxhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksbUNBQW1DO0lBQ25DLGVBQWU7SUFDZixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxnQ0FBZ0M7SUFDaEMsY0FBYztBQUNsQjs7QUFFQTtJQUNJLGdCQUFnQjtJQUNoQixxQkFBcUI7SUFDckIsc0JBQXNCO0lBQ3RCO0FBQ0o7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixxQkFBcUI7SUFDckIsbUJBQW1CO0lBQ25CLHVCQUF1QjtJQUN2QixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxVQUFVO0lBQ1YsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLG1DQUFtQztJQUNuQyw0QkFBNEI7QUFDaEM7O0FBRUE7SUFDSSwrQkFBK0I7QUFDbkM7O0FBRUE7SUFDSSxXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxVQUFVO0lBQ1Ysa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLG9CQUFvQjtBQUN4Qjs7QUFFQTtJQUNJLFdBQVc7SUFDWCx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLDJCQUEyQjtJQUMzQixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxZQUFZO0lBQ1osV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7Q0FDQyxtQkFBbUI7QUFDcEI7O0FBRUE7SUFDSSxVQUFVO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9jaGVja291dC9jaGVja291dC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvc21vIHtcclxuICAgIGZsb2F0OiByaWdodDtcclxuICAgIHdpZHRoOiAxMDBweDtcclxuICAgIGhlaWdodDogMzBweDtcclxufVxyXG5cclxuLmJhciB7XHJcbiAgICBwYWRkaW5nOiAwLjVyZW0gMC41cmVtO1xyXG4gICAgbGluZS1oZWlnaHQ6IDE7XHJcbn1cclxuXHJcbi5iZ3tcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0Z3JleTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiA3MDBweDtcclxufVxyXG5cclxuLmJvcmRlci1yaWdodHtcclxuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkIGxpZ2h0Z3JleSAgO1xyXG4gICAgZm9udC13ZWlnaHQ6NjAwO1xyXG4gICAgb3ZlcmZsb3cteDogaGlkZGVuO1xyXG59XHJcblxyXG4uYWN0aXZlLXRhYntcclxuICAgIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCAjZWMyZTdhO1xyXG4gICAgY29sb3I6ICNlYzJlN2E7XHJcbn1cclxuXHJcbi5sZWZ0LWFsaWduIHtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDAuMjVyZW07XHJcbiAgICBwYWRkaW5nLXJpZ2h0OiAwLjI1cmVtO1xyXG4gICAgb3ZlcmZsb3c6aGlkZGVuXHJcbn1cclxuXHJcbi5hZGRyZXNzIHtcclxuICAgIGZvbnQtd2VpZ2h0OiAzMDA7XHJcbiAgICBmb250LXNpemU6IHh4LXNtYWxsO1xyXG4gICAgb3ZlcmZsb3c6aGlkZGVuO1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xyXG4gICAgd2lkdGg6IDEwMHB4O1xyXG59XHJcblxyXG4ucGF5bWVudC1zZWN0aW9ue1xyXG4gICAgcGFkZGluZy10b3A6IDFyZW07XHJcbn1cclxuXHJcbi5wYXltZW50LWxhYmVse1xyXG4gICAgZm9udC1zaXplOiB4LXNtYWxsO1xyXG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcclxuICAgIHBhZGRpbmctbGVmdDogMXJlbTtcclxufVxyXG5cclxuLnBheW1lbnQtbW9kZSB7XHJcbiAgICB3aWR0aDogMTUlO1xyXG4gICAgcGFkZGluZy1yaWdodDogMDtcclxufVxyXG5cclxuLmNhcmQtYm9keSA+IGRpdntcclxuICAgIGZvbnQtc2l6ZTogeC1zbWFsbDtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCB3aGl0ZXNtb2tlO1xyXG4gICAgcGFkZGluZzogMC4yNXJlbSAwIDAuMjVyZW0gMDtcclxufVxyXG5cclxuLmFjdGl2ZS1wYXltZW50IHtcclxuICAgIGJvcmRlci1yaWdodDogMnB4IHNvbGlkICNlYzJlN2E7XHJcbn1cclxuXHJcbi5leHBpcnl7XHJcbiAgICBjb2xvcjogZ3JleTtcclxufVxyXG5cclxuLmNyZWRpdC1jYXJke1xyXG4gICAgd2lkdGg6IDIwJTtcclxuICAgIC8qIHBhZGRpbmc6IDAgMDsgKi9cclxufVxyXG5cclxuLnNhdmUtY2hlY2tib3gtbGFiZWx7XHJcbiAgICBmb250LXNpemU6IHgtc21hbGw7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDAuNXJlbTtcclxufVxyXG5cclxuLnBheS1idG57XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNlYzJlN2E7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBwYWRkaW5nOiAwLjI1cmVtIDAgMC4yNWVtIDA7XHJcbiAgICBib3JkZXItc3R5bGU6IG5vbmU7XHJcbn1cclxuXHJcbi5jdnZ7XHJcbiAgICBmbG9hdDpyaWdodDtcclxufVxyXG5cclxuLmN2di1pbWd7XHJcbiAgICBmbG9hdDogcmlnaHQ7XHJcbiAgICB3aWR0aDogMjVweDtcclxuICAgIGhlaWdodDogMjVweDtcclxufVxyXG5cclxuLmNhcmQtdGV4dC1zdXN0YWluYWJsZSB7XHJcbiBmb250LXNpemU6IHh4LXNtYWxsO1xyXG59XHJcblxyXG4uc3VtbWFyeXtcclxuICAgIHdpZHRoOiAyMiU7XHJcbn1cclxuXHJcblxyXG4iXX0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "tr", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, "Discount(646 points used)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "label", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](100);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104, "Shipping Charge");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "label", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](107, "Free");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](110, "label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](111, "Grand Total");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](112, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "label", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](116, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](118, "Remove Reward Points");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "label", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "button", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122, "REMOVE");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](123, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](124, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](93);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("\u20B9", ctx.bagTotal, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("-\u20B9", ctx.rewardPoints / 100, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("\u20B9", ctx.grandTotal, "");
+    } }, styles: [".cosmo[_ngcontent-%COMP%] {\r\n    float: right;\r\n    width: 100px;\r\n    height: 30px;\r\n}\r\n\r\n.bar[_ngcontent-%COMP%] {\r\n    padding: 0.5rem 0.5rem;\r\n    line-height: 1;\r\n}\r\n\r\n.bg[_ngcontent-%COMP%]{\r\n    background-color: lightgrey;\r\n    width: 100%;\r\n    height: 700px;\r\n}\r\n\r\n.border-right[_ngcontent-%COMP%]{\r\n    border-right: 1px solid lightgrey  ;\r\n    font-weight:600;\r\n    overflow-x: hidden;\r\n}\r\n\r\n.active-tab[_ngcontent-%COMP%]{\r\n    border-bottom: 2px solid #ec2e7a;\r\n    color: #ec2e7a;\r\n}\r\n\r\n.left-align[_ngcontent-%COMP%] {\r\n    text-align: left;\r\n    padding-left: 0.25rem;\r\n    padding-right: 0.25rem;\r\n    overflow:hidden\r\n}\r\n\r\n.address[_ngcontent-%COMP%] {\r\n    font-weight: 300;\r\n    font-size: xx-small;\r\n    overflow:hidden;\r\n    display: inline-block;\r\n    white-space: nowrap;\r\n    text-overflow: ellipsis;\r\n    width: 100px;\r\n}\r\n\r\n.payment-section[_ngcontent-%COMP%]{\r\n    padding-top: 1rem;\r\n}\r\n\r\n.payment-label[_ngcontent-%COMP%]{\r\n    font-size: x-small;\r\n    font-weight: 700;\r\n    padding-left: 1rem;\r\n}\r\n\r\n.payment-mode[_ngcontent-%COMP%] {\r\n    width: 15%;\r\n    padding-right: 0;\r\n}\r\n\r\n.card-body[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]{\r\n    font-size: x-small;\r\n    border-bottom: 1px solid whitesmoke;\r\n    padding: 0.25rem 0 0.25rem 0;\r\n}\r\n\r\n.active-payment[_ngcontent-%COMP%] {\r\n    border-right: 2px solid #ec2e7a;\r\n}\r\n\r\n.expiry[_ngcontent-%COMP%]{\r\n    color: grey;\r\n}\r\n\r\n.credit-card[_ngcontent-%COMP%]{\r\n    width: 20%;\r\n    \r\n}\r\n\r\n.save-checkbox-label[_ngcontent-%COMP%]{\r\n    font-size: x-small;\r\n    padding-left: 0.5rem;\r\n}\r\n\r\n.pay-btn[_ngcontent-%COMP%]{\r\n    width: 100%;\r\n    background-color: #ec2e7a;\r\n    color: white;\r\n    padding: 0.25rem 0 0.25em 0;\r\n    border-style: none;\r\n}\r\n\r\n.cvv[_ngcontent-%COMP%]{\r\n    float:right;\r\n}\r\n\r\n.cvv-img[_ngcontent-%COMP%]{\r\n    float: right;\r\n    width: 25px;\r\n    height: 25px;\r\n}\r\n\r\n.card-text-sustainable[_ngcontent-%COMP%] {\r\n font-size: xx-small;\r\n}\r\n\r\n.summary[_ngcontent-%COMP%]{\r\n    width: 22%;\r\n}\r\n\r\n.right-align[_ngcontent-%COMP%]{\r\n    text-align: right;\r\n}\r\n\r\ntable[_ngcontent-%COMP%], tr[_ngcontent-%COMP%], td[_ngcontent-%COMP%] {\r\n    width: 100%;\r\n    border: none;\r\n    font-size: xx-small;\r\n}\r\n\r\n.btn-rm[_ngcontent-%COMP%]{\r\n    border-style: none;\r\n    color: #ec2e7a;\r\n    background-color: white;\r\n    font-weight: 600;\r\n}\r\n\r\n.card-body[_ngcontent-%COMP%]{\r\n    padding-top: 0;\r\n    padding-bottom: 0;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2hlY2tvdXQvY2hlY2tvdXQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFlBQVk7SUFDWixZQUFZO0lBQ1osWUFBWTtBQUNoQjs7QUFFQTtJQUNJLHNCQUFzQjtJQUN0QixjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksMkJBQTJCO0lBQzNCLFdBQVc7SUFDWCxhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksbUNBQW1DO0lBQ25DLGVBQWU7SUFDZixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxnQ0FBZ0M7SUFDaEMsY0FBYztBQUNsQjs7QUFFQTtJQUNJLGdCQUFnQjtJQUNoQixxQkFBcUI7SUFDckIsc0JBQXNCO0lBQ3RCO0FBQ0o7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixxQkFBcUI7SUFDckIsbUJBQW1CO0lBQ25CLHVCQUF1QjtJQUN2QixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxVQUFVO0lBQ1YsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLG1DQUFtQztJQUNuQyw0QkFBNEI7QUFDaEM7O0FBRUE7SUFDSSwrQkFBK0I7QUFDbkM7O0FBRUE7SUFDSSxXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxVQUFVO0lBQ1Ysa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLG9CQUFvQjtBQUN4Qjs7QUFFQTtJQUNJLFdBQVc7SUFDWCx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLDJCQUEyQjtJQUMzQixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxZQUFZO0lBQ1osV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7Q0FDQyxtQkFBbUI7QUFDcEI7O0FBRUE7SUFDSSxVQUFVO0FBQ2Q7O0FBRUE7SUFDSSxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixjQUFjO0lBQ2QsdUJBQXVCO0lBQ3ZCLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGNBQWM7SUFDZCxpQkFBaUI7QUFDckIiLCJmaWxlIjoic3JjL2FwcC9jaGVja291dC9jaGVja291dC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvc21vIHtcclxuICAgIGZsb2F0OiByaWdodDtcclxuICAgIHdpZHRoOiAxMDBweDtcclxuICAgIGhlaWdodDogMzBweDtcclxufVxyXG5cclxuLmJhciB7XHJcbiAgICBwYWRkaW5nOiAwLjVyZW0gMC41cmVtO1xyXG4gICAgbGluZS1oZWlnaHQ6IDE7XHJcbn1cclxuXHJcbi5iZ3tcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0Z3JleTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiA3MDBweDtcclxufVxyXG5cclxuLmJvcmRlci1yaWdodHtcclxuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkIGxpZ2h0Z3JleSAgO1xyXG4gICAgZm9udC13ZWlnaHQ6NjAwO1xyXG4gICAgb3ZlcmZsb3cteDogaGlkZGVuO1xyXG59XHJcblxyXG4uYWN0aXZlLXRhYntcclxuICAgIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCAjZWMyZTdhO1xyXG4gICAgY29sb3I6ICNlYzJlN2E7XHJcbn1cclxuXHJcbi5sZWZ0LWFsaWduIHtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDAuMjVyZW07XHJcbiAgICBwYWRkaW5nLXJpZ2h0OiAwLjI1cmVtO1xyXG4gICAgb3ZlcmZsb3c6aGlkZGVuXHJcbn1cclxuXHJcbi5hZGRyZXNzIHtcclxuICAgIGZvbnQtd2VpZ2h0OiAzMDA7XHJcbiAgICBmb250LXNpemU6IHh4LXNtYWxsO1xyXG4gICAgb3ZlcmZsb3c6aGlkZGVuO1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xyXG4gICAgd2lkdGg6IDEwMHB4O1xyXG59XHJcblxyXG4ucGF5bWVudC1zZWN0aW9ue1xyXG4gICAgcGFkZGluZy10b3A6IDFyZW07XHJcbn1cclxuXHJcbi5wYXltZW50LWxhYmVse1xyXG4gICAgZm9udC1zaXplOiB4LXNtYWxsO1xyXG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcclxuICAgIHBhZGRpbmctbGVmdDogMXJlbTtcclxufVxyXG5cclxuLnBheW1lbnQtbW9kZSB7XHJcbiAgICB3aWR0aDogMTUlO1xyXG4gICAgcGFkZGluZy1yaWdodDogMDtcclxufVxyXG5cclxuLmNhcmQtYm9keSA+IGRpdntcclxuICAgIGZvbnQtc2l6ZTogeC1zbWFsbDtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCB3aGl0ZXNtb2tlO1xyXG4gICAgcGFkZGluZzogMC4yNXJlbSAwIDAuMjVyZW0gMDtcclxufVxyXG5cclxuLmFjdGl2ZS1wYXltZW50IHtcclxuICAgIGJvcmRlci1yaWdodDogMnB4IHNvbGlkICNlYzJlN2E7XHJcbn1cclxuXHJcbi5leHBpcnl7XHJcbiAgICBjb2xvcjogZ3JleTtcclxufVxyXG5cclxuLmNyZWRpdC1jYXJke1xyXG4gICAgd2lkdGg6IDIwJTtcclxuICAgIC8qIHBhZGRpbmc6IDAgMDsgKi9cclxufVxyXG5cclxuLnNhdmUtY2hlY2tib3gtbGFiZWx7XHJcbiAgICBmb250LXNpemU6IHgtc21hbGw7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDAuNXJlbTtcclxufVxyXG5cclxuLnBheS1idG57XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNlYzJlN2E7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBwYWRkaW5nOiAwLjI1cmVtIDAgMC4yNWVtIDA7XHJcbiAgICBib3JkZXItc3R5bGU6IG5vbmU7XHJcbn1cclxuXHJcbi5jdnZ7XHJcbiAgICBmbG9hdDpyaWdodDtcclxufVxyXG5cclxuLmN2di1pbWd7XHJcbiAgICBmbG9hdDogcmlnaHQ7XHJcbiAgICB3aWR0aDogMjVweDtcclxuICAgIGhlaWdodDogMjVweDtcclxufVxyXG5cclxuLmNhcmQtdGV4dC1zdXN0YWluYWJsZSB7XHJcbiBmb250LXNpemU6IHh4LXNtYWxsO1xyXG59XHJcblxyXG4uc3VtbWFyeXtcclxuICAgIHdpZHRoOiAyMiU7XHJcbn1cclxuXHJcbi5yaWdodC1hbGlnbntcclxuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xyXG59XHJcblxyXG50YWJsZSx0cix0ZCB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGZvbnQtc2l6ZTogeHgtc21hbGw7XHJcbn1cclxuXHJcbi5idG4tcm17XHJcbiAgICBib3JkZXItc3R5bGU6IG5vbmU7XHJcbiAgICBjb2xvcjogI2VjMmU3YTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgZm9udC13ZWlnaHQ6IDYwMDtcclxufVxyXG5cclxuLmNhcmQtYm9keXtcclxuICAgIHBhZGRpbmctdG9wOiAwO1xyXG4gICAgcGFkZGluZy1ib3R0b206IDA7XHJcbn1cclxuXHJcbiJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CheckoutComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -505,7 +593,7 @@ ShoppingBagComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, " Sustainable Packaging ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "label");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "small");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "By choosinhg this option you will receive");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "By choosing this option you will receive");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "strong");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " 100 Reward Points");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
