@@ -43,9 +43,40 @@
                 <div class="card">
                     <div class="card-body">
                         <p class="card-text card-text-sustainable"><input type="checkbox" name="reward" id="reward-radio" checked> Sustainable Packaging
-                            <label><small>By choosinhg this option you will receive<strong> 100 Reward
+                            <label><small>By choosing this option you will receive<strong> 100 Reward
                                         Points</strong></small></label>
                         </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <div>
+                                2 Items in your Bag <label>Details</label>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td><label >Sub Total</label></td>
+                                    <td><label class="right-align">&#8377;{{bagTotal}}</label></td>
+                                </tr>
+                                <tr class="discount" >
+                                    <td><label >Discount(646 points used)</label></td>
+                                    <td><label class="right-align">-&#8377;{{rewardPoints/100}}</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label >Shipping Charge</label></td>
+                                    <td><label class="right-align">Free</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label >Grand Total</label></td>
+                                    <td><label class="right-align">&#8377;{{grandTotal}}</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Remove Reward Points</label></td>
+                                    <td><label class="right-align"><button class="btn-rm">REMOVE</button></label></td>
+                                </tr>
+                            </table>
+                            <hr>
                     </div>
                 </div>
             </div>

@@ -108,4 +108,25 @@
     width: 22%;
 }
 
+.right-align{
+    text-align: right;
+}
+
+table,tr,td {
+    width: 100%;
+    border: none;
+    font-size: xx-small;
+}
+
+.btn-rm{
+    border-style: none;
+    color: #ec2e7a;
+    background-color: white;
+    font-weight: 600;
+}
+
+.card-body{
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
