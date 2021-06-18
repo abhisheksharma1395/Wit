@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WalletComponent implements OnInit {
 
+  public showWallet:boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  goToHistory(){
+    this.showWallet = false;
   }
 
 }
