@@ -101,7 +101,7 @@ class WalletComponent {
     }
 }
 WalletComponent.ɵfac = function WalletComponent_Factory(t) { return new (t || WalletComponent)(); };
-WalletComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: WalletComponent, selectors: [["app-wallet"]], decls: 2, vars: 2, consts: [[4, "ngIf"], [3, "click"], ["src", "../../assets/images/wallet.jpeg", "alt", "Wallet", 1, "img"], ["src", "../../assets/images/history.jpeg", "alt", "Wallet", 1, "img"]], template: function WalletComponent_Template(rf, ctx) { if (rf & 1) {
+WalletComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: WalletComponent, selectors: [["app-wallet"]], decls: 2, vars: 2, consts: [[4, "ngIf"], [3, "click"], ["src", "../../assets/images/wallet.jpg", "alt", "Wallet", 1, "img"], ["src", "../../assets/images/history.jpeg", "alt", "Wallet", 1, "img"]], template: function WalletComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, WalletComponent_div_0_Template, 3, 0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, WalletComponent_div_1_Template, 3, 0, "div", 0);
     } if (rf & 2) {
@@ -205,7 +205,7 @@ function CheckoutComponent_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "small");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "By choosing this option you will receive");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " 100 Reward Points");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " 500 Reward Points");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -444,7 +444,7 @@ function CheckoutComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "small");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, "By choosing this option you will receive");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, " 100 Reward Points");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, " 500 Reward Points");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -910,7 +910,7 @@ ShoppingBagComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "small");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "By choosing this option you will receive");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " 100 Reward Points");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " 500 Reward Points");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
